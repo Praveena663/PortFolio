@@ -1,0 +1,259 @@
+/* RESET AND BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+  padding-top:-10px;
+}
+
+/* HEADER */
+header {
+  background: aqua;
+  width: 40%;
+  height: 50px;
+  border-radius: 20px;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+} 
+
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 800;
+  transition: 0.5s;
+  margin-top: -30px;
+}
+
+nav a:hover {
+  text-transform: uppercase;
+}
+
+
+/* HOME */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.home-container h2 {
+  color: aqua;
+  text-align: center;
+}
+
+.home-container p {
+  text-align: center;
+  max-width: 600px;
+}
+
+.home-img img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.home-download {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-resume:hover {
+  background-color: aqua;
+}
+
+/* INTEREST SECTION */
+.interest-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 120px 0 40px;
+}
+
+.interest-container span {
+  color: aqua;
+}
+
+.interest-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.interest-boxes {
+  background-color: #1f1f2e;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 280px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.interest-boxes:hover {
+  transform: translateY(-5px);
+}
+
+.interest-boxes i {
+  font-size: 36px;
+  color: cyan;
+  margin-bottom: 15px;
+}
+
+.interest-boxes h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.interest-boxes p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* RESUME SECTION */
+.resume-container h2 {
+  text-align: center;
+  color: cyan;
+  font-size: 2rem;
+  margin: 120px 0 40px;
+}
+
+.resume-btn {
+  color: black;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.resume-btn:hover {
+  background-color: aqua;
+}
+
+.experience-contents,
+.education-contents,
+.skill-contents {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #1f1f2e;
+}
+
+.skill-boxes p span {
+  color: aqua;
+}
+
+/* CONTACT SECTION */
+.contact-container h2 {
+  text-align: center;
+  color: cyan;
+  font-size: 2rem;
+  margin: 120px 0 40px;
+}
+
+.contact-boxes {
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #1f1f2e;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-boxes a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.contact-boxes a:hover{
+  color: cyan;
+}
+
+/* FOOTER */
+.portfolio-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .home-img {
+    margin-left: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resume-btn {
+    width: 90%;
+  }
+}
